@@ -1,5 +1,4 @@
-## added by GaryC
-*.pdf
+# COPIED FROM: https://github.com/github/gitignore/blob/main/TeX.gitignore
 
 
 ## Core latex/pdflatex auxiliary files:
@@ -115,15 +114,23 @@ acs-*.bib
 *.glsdefs
 *.lzo
 *.lzs
+*.slg
+*.slo
+*.sls
 
 # uncomment this for glossaries-extra (will ignore makeindex's style files!)
 # *.ist
+
+# gnuplot
+*.gnuplot
+*.table
 
 # gnuplottex
 *-gnuplottex-*
 
 # gregoriotex
 *.gaux
+*.glog
 *.gtex
 
 # htlatex
@@ -139,8 +146,8 @@ acs-*.bib
 
 # knitr
 *-concordance.tex
-# TODO Comment the next line if you want to keep your tikz graphics files
-*.tikz
+# TODO Uncomment the next line if you use knitr and want to ignore its generated tikz files
+# *.tikz
 *-tikzDictionary
 
 # listings
@@ -170,6 +177,9 @@ _minted*
 # morewrites
 *.mw
 
+# newpax
+*.newpax
+
 # nomencl
 *.nlg
 *.nlo
@@ -188,6 +198,9 @@ _minted*
 
 # scrwfile
 *.wrt
+
+# svg
+svg-inkscape/
 
 # sympy
 *.sout
@@ -212,6 +225,9 @@ pythontex-files-*/
 *.dpth
 *.md5
 *.auxlock
+
+# titletoc
+*.ptc
 
 # todonotes
 *.tdo
@@ -278,3 +294,11 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# xwatermark package
+*.xwm
+
+# REVTeX puts footnotes in the bibliography by default, unless the nofootinbib
+# option is specified. Footnotes are the stored in a file with suffix Notes.bib.
+# Uncomment the next line to have this generated file ignored.
+#*Notes.bib
